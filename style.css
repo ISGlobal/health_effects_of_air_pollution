@@ -1,0 +1,88 @@
+/* svg responsive*/
+html{
+  margin:0;
+  font-family:Roboto;
+}
+body{
+  margin:0;
+  /*height: 0;*/
+  /*padding-top: 48%;*/
+  position: relative;
+}
+svg {
+  position: absolute;
+  top: 66px;
+  /*right: -332px;*/
+  /*top: 0;
+  right:-100px;*/
+  /*left: 0;*/
+  /*width:100%;*/
+  /*height:auto;*/
+}
+
+svg g.active path{
+  fill:#7fc6d4 !important;
+}
+
+
+h1{
+  font-size: 3.9vh;
+  padding: 1.5vh;
+  margin: 0;
+}
+h2{
+  margin: 0;
+  font-size: 2.1vh;
+  text-transform: uppercase;
+  padding: 3vh 7vh;
+  background-image:url('cross.svg');
+  background-repeat:no-repeat;
+  background-size: 4vh;
+  background-position: 1vh 2vh;
+}
+
+
+.tab{
+  cursor:pointer;
+  /*cursor:crosshair*/
+}
+.tab.cabeza{
+  background-color:#6ebbcc;
+}
+.tab.respiratorio{
+   background-color:#66c6db;
+}
+.tab.corazon{
+   background-color:#008dab;
+}
+.tab.arterias{
+   background-color:#4aadc3;
+}
+.tab.feto{
+   background-color:#6cb9cc;
+}
+.tab.reproductivo{
+   background-color:#8ac4d5;
+}
+
+.tab .content{
+  display:none;
+  background-color:#cbcaca;
+  padding: 1vh 26% 1vh 1vh;
+  font-size: 2.5vh;
+  position:absolute;
+  overflow-y:auto
+}
+.tab.active h2{
+  background-image:url('go_back.svg');
+}
+.tab.active .content{
+  display:block
+}
+.tab.hide{
+  display:none;
+}
+.font{
+  font-size: 1.8vh;
+  font-style: italic;
+}
