@@ -8,11 +8,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   viewBox="0 0 744.09449 1052.3622"
-   width="210mm"
+   viewBox="0 0 527.94703 1052.7641"
+   width="527.94702"
    sodipodi:docname="woman.svg"
    inkscape:version="0.91 r13725"
-   height="100%">
+   height="1052.764"
+   id="svg2">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -22,18 +23,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1400"
-     inkscape:window-height="994"
+     inkscape:window-width="1366"
+     inkscape:window-height="709"
      id="namedview77"
      showgrid="false"
      inkscape:zoom="0.22425739"
-     inkscape:cx="263.94867"
-     inkscape:cy="-10.679094"
+     inkscape:cx="-523.09339"
+     inkscape:cy="881.15326"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     width="744.09449px"
-     showborder="false" />
+     width="527.947px"
+     showborder="true"
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4113" />
   <metadata
@@ -49,7 +51,8 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1">
+     id="layer1"
+     transform="translate(-107.0986,1.162734)">
     <g
        id="woman">
       <path
@@ -62,7 +65,8 @@
          transform="matrix(1.8308231,0,0,1.8308231,-952.2709,-155.47142)"
          id="g35">
         <g
-           id="g37" class="respiratorio">
+           id="g37"
+           class="respiratorio">
           <path
              style="fill:#d9d9d9;stroke:#000000;stroke-width:0.73540002;stroke-miterlimit:10"
              id="path39"
@@ -128,7 +132,8 @@
       </g>
       <g
          transform="matrix(1.8308231,0,0,1.8308231,-952.2709,-155.47142)"
-         id="g61" class="corazon">
+         id="g61"
+         class="corazon">
         <path
            style="fill:#000100"
            id="path63"
@@ -142,7 +147,8 @@
       </g>
       <g
          transform="matrix(1.8308231,0,0,1.8308231,-952.2709,-155.47142)"
-         id="g67" class="arterias">
+         id="g67"
+         class="arterias">
         <g
            id="g69">
           <path
@@ -170,7 +176,8 @@
       </g>
       <g
          transform="matrix(1.8308231,0,0,1.8308231,-952.2709,-155.47142)"
-         id="g81" class="feto">
+         id="g81"
+         class="feto">
         <path
            style="fill:#000100"
            id="path83"

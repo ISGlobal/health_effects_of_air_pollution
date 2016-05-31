@@ -10,6 +10,7 @@ body{
   position: relative;
 }
 svg {
+  overflow: hidden;
   position: absolute;
   top: 66px;
   /*right: -332px;*/
@@ -23,7 +24,11 @@ svg {
 svg g.active path{
   fill:#7fc6d4 !important;
 }
-
+svg g.active.corazon path,
+svg g.active.feto path{
+stroke-width: 1px !important;;
+stroke: #000 !important;
+}
 
 h1{
   font-size: 3.9vh;
@@ -38,40 +43,51 @@ h2{
   background-image:url('cross.svg');
   background-repeat:no-repeat;
   background-size: 4vh;
-  background-position: 1vh 2vh;
+  /*background-position: 1.5vh 3vh;*/
+  background-position: 1.5vh 2.3vh;
 }
 
-
+#graph{
+  width: 100%;
+  max-width: 100%;
+}
 .tab{
   cursor:pointer;
   /*cursor:crosshair*/
 }
 .tab.cabeza{
-  background-color:#6ebbcc;
+  background-color:#008daa;
 }
 .tab.respiratorio{
-   background-color:#66c6db;
+   background-color:#1998b2;
 }
 .tab.corazon{
-   background-color:#008dab;
+   background-color:#33a4bb;
+
 }
 .tab.arterias{
-   background-color:#4aadc3;
+   background-color:#4dafc4;
 }
 .tab.feto{
-   background-color:#6cb9cc;
+  background-color:#66bbcc;
 }
 .tab.reproductivo{
-   background-color:#8ac4d5;
+   background-color:#7fc6d4;
 }
 
 .tab .content{
   display:none;
   background-color:#cbcaca;
-  padding: 1vh 26% 1vh 1vh;
+  padding: 1vh 1vh 1vh 1vh;
   font-size: 2.5vh;
   position:absolute;
-  overflow-y:auto
+  overflow-y:auto;
+  /*width: 100%;*/
+  left: 0;
+  right: 0;
+}
+.tab.reproductivo .content{
+  /*width:100%;*/
 }
 .tab.active h2{
   background-image:url('go_back.svg');
@@ -85,4 +101,13 @@ h2{
 .font{
   font-size: 1.8vh;
   font-style: italic;
+}
+
+.content a{
+  /*white-space: normal;*/
+  display:inline-block;
+  width: 50vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
