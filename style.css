@@ -106,8 +106,34 @@ h2{
 .content a{
   /*white-space: normal;*/
   display:inline-block;
-  width: 50vw;
+  width: 50vh;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+
+/* Landscape */
+@media screen and (orientation:landscape) {
+   /* Landscape styles here */
+   h1{
+     font-size: 3.9vw;
+     padding: 1.5vw;
+   }
+   h2{
+     font-size: 2.1vw;
+     padding: 3vw 7vw;
+     background-size: 4vw;
+
+     background-position: 1.5vw 2.3vw;
+   }
+   .tab .content{
+     padding: 1vw 1vw 1vw 1vw;
+     font-size: 2.5vw;
+
+   }
+   .font{
+     font-size: 1.8vw;
+
+   }
 }
