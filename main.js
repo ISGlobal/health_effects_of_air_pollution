@@ -29,28 +29,28 @@ d3.select('.feto h2').text(iJS._('Feto y placenta'));
 d3.select('.reproductivo h2').text(iJS._('Aparato reproductivo'));
 
 
-d3.select('.cabeza .content').html(iJS._('<p><b>Ictus:</b> 1,4 millones de muertes anuales.<br/> \
+d3.select('.cabeza .content').html(iJS._('<p><span class="first"><b>Ictus:</b> 1,4 millones de muertes anuales.</span><br/> \
 Según la OMS, un 34% de las muertes prematuras anuales atribuibles a contaminación del aire interior causada por combustibles sólidos se producen por accidentes cerebrovasculares.<br/> \
 <span class="font">Fuente: <a href="http://www.who.int/mediacentre/factsheets/fs292/es/">http://www.who.int/mediacentre/factsheets/fs292/es/</a></span></p> \
-<p><b>Daños en el desarrollo neuronal:</b> demostrados en animales y en fase de estudio en humanos.<br/>\
+<p><span class="first"><b>Daños en el desarrollo neuronal:</b> demostrados en animales y en fase de estudio en humanos.</span><br/>\
 <span class="font">Fuentes: Environ Res. 2016 May;147:383­98 y Endocrinology. 2015 Oct;156(10):3473­82.</span></p>\
-<p><b>Problemas de salud mental:</b> Autismo y problemas de conducta en niños.<br/>\
+<p><span class="first"><b>Problemas de salud mental:</b> Autismo y problemas de conducta en niños.</span><br/>\
 <span class="font">Fuentes: JAMA Psychiatry. 2013 Jan;70(1):71­7 y <a href="http://mentalhealthdaily.com/2015/08/11/air­pollution­causes­brain­damage">http://mentalhealthdaily.com/2015/08/11/air­pollution­causes­brain­damage</a></span></p>\
-<p><b>Enfermedades neurodegenerativas:</b> Daños similares a los de un cerebro con Alzheimer.<br/>\
+<p><span class="first"><b>Enfermedades neurodegenerativas:</b> Daños similares a los de un cerebro con Alzheimer.</span><br/>\
 <span class="font">Fuente: J Alzheimers Dis. 2015;45(3):757­70.</span></p>'));
 
-d3.select('.respiratorio .content').html(iJS._('<p><b>Enfermedad Pulmonar Obstructiva Crónica (EPOC):</b> Cerca de 950.000 muertes anuales.</br> \
+d3.select('.respiratorio .content').html(iJS._('<p><span class="first"><b>Enfermedad Pulmonar Obstructiva Crónica (EPOC):</b> Cerca de 950.000 muertes anuales.</span></br> \
 Según la OMS, un 22% de las muertes prematuras anuales atribuibles a contaminación del aire interior causada por combustibles sólidos se producen por EPOC. </br>\
 <span class="font">Fuente: <a href="http://www.who.int/mediacentre/factsheets/fs292/es/">http://www.who.int/mediacentre/factsheets/fs292/es/</a></span></p>\
-<p><b>Cáncer de pulmón:</b> más de 255.000 muertes anuales.</br>\
+<p><span class="first"><b>Cáncer de pulmón:</b> más de 255.000 muertes anuales.</span></br>\
 Según la OMS, un 6% de las muertes prematuras anuales atribuibles a contaminación del aire interior causada por combustibles sólidos se producen por cáncer de pulmón.</br>\
 <span class="font">Fuente: <a href="http://www.who.int/mediacentre/factsheets/fs292/es/">http://www.who.int/mediacentre/factsheets/fs292/es/</a></span></p>\
-<p><b>Neumonía:</b> más de 510.000 muertes anuales.</br>\
+<p><span class="first"><b>Neumonía:</b> más de 510.000 muertes anuales.</span></br>\
 Según la OMS, un 12% de las muertes prematuras anuales atribuibles a contaminación del aire interior causada por combustibles sólidos se producen por neumonías. </br>\
 <span class="font">Fuente: <a href="http://www.who.int/mediacentre/factsheets/fs292/es/">http://www.who.int/mediacentre/factsheets/fs292/es/</a></span></p>\
-<p><b>Afectación de la función pulmonar:</b> función pulmonar reducida y menor crecimiento de los pulmones.</br>\
+<p><span class="first"><b>Afectación de la función pulmonar:</b> función pulmonar reducida y menor crecimiento de los pulmones.</span></br>\
 <span class="font">Fuente: Thorax 2009 64: 645-646 y N Engl J Med. 2015 Mar 5;372(10):905-13).</span></p>\
-<p><b>Asma:</b> Nuevos casos de asma y agravamiento de los ya existentes.</br>\
+<p><span class="first"><b>Asma:</b> Nuevos casos de asma y agravamiento de los ya existentes.</span></br>\
 <span class="font">Fuente: Respirology. 2012 Aug;17(6):887-98.</span></p>'));
 
 d3.select('.corazon .content').html(iJS._('<p><b>Infarto de miocardio:</b> más de 1,1 millón de muertes anuales.</br>\
@@ -93,6 +93,7 @@ d3.xml("woman.svg", "image/svg+xml", function(error, xml) {
   d3.select('#men').style("visibility", "hidden");
 
   var svg=d3.select('svg');
+  console.log(svg)
   // svg.attr("height", (d3.select(".tabs").node().getBoundingClientRect().height - 10)+"px");
   // svg.attr("width","auto")
   // svg.style({
