@@ -89,6 +89,7 @@ d3.xml("woman.svg", "image/svg+xml", function(error, xml) {
   // });
 
  d3.select(window).on('resize',resize)
+ var aspectRatio =  svg.attr('width') / svg.attr('height');
  resize();
   // console.log((svg.node().getBoundingClientRect().width/2) - (d3.select('g#layer1').node().getBoundingClientRect().width/2) )
   // svg.style("visibility", "hidden");
@@ -143,24 +144,24 @@ d3.xml("woman.svg", "image/svg+xml", function(error, xml) {
 
   })
 
+  function resize(){
+    console.log('resize')
+    var svg=d3.select('svg');
+    // var aspectRatio =  svg.attr('width') / svg.attr('height');
+    svg.attr("height", (d3.select(".tabs").node().getBoundingClientRect().height - 10)+"px");
+    svg.attr("width",(d3.select(".tabs").node().getBoundingClientRect().height*aspectRatio) +"px")
+    console.log(d3.select(".tabs").node().getBoundingClientRect().height,aspectRatio)
+    svg.style({
+      // "right": "-" + ((svg.node().getBoundingClientRect().width/2) - (d3.select('g#layer1').node().getBoundingClientRect().width/2))  + "px",
+      "right":0,
+      "top": (d3.select('h1').node().getBoundingClientRect().height + 5)+'px'
+    });
+    // console.log(((svg.node().getBoundingClientRect().width/2) - (d3.select('g#layer1').node().getBoundingClientRect().width/2)))
+    d3.selectAll('.content').style({
+      "padding-right":d3.select('#layer1').node().getBoundingClientRect().width+"px",
+      // "width": d3.select(".tabs").node().getBoundingClientRect().width + "px"
+          // "padding-right":"0px"
+    })
+  }
+
 });
-
-
-function resize(){
-  console.log('resize')
-  var svg=d3.select('svg');
-  var aspectRatio =  svg.attr('width') / svg.attr('height');
-  svg.attr("height", (d3.select(".tabs").node().getBoundingClientRect().height - 10)+"px");
-  svg.attr("width",((d3.select(".tabs").node().getBoundingClientRect().height - 10)*aspectRatio) +"px")
-  svg.style({
-    // "right": "-" + ((svg.node().getBoundingClientRect().width/2) - (d3.select('g#layer1').node().getBoundingClientRect().width/2))  + "px",
-    "right":0,
-    "top": (d3.select('h1').node().getBoundingClientRect().height + 5)+'px'
-  });
-  // console.log(((svg.node().getBoundingClientRect().width/2) - (d3.select('g#layer1').node().getBoundingClientRect().width/2)))
-  d3.selectAll('.content').style({
-    "padding-right":d3.select('#layer1').node().getBoundingClientRect().width+"px",
-    // "width": d3.select(".tabs").node().getBoundingClientRect().width + "px"
-        // "padding-right":"0px"
-  })
-}
