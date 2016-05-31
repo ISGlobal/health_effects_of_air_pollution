@@ -79,7 +79,7 @@ h2{
   display:none;
   background-color:#cbcaca;
   padding: 1vh 1vh 1vh 1vh;
-  font-size: 2vh;
+  font-size: 2.6vh;
   position:absolute;
   overflow-y:auto;
   /*width: 100%;*/
@@ -99,8 +99,8 @@ h2{
   display:none;
 }
 .tab .content span.first{
-  font-size: 3vh;
-  margin-bottom: .6vh;
+  /*font-size: 3vh;*/
+  margin-bottom: 1vh;
   display: inline-block;
 }
 .font{
@@ -134,12 +134,12 @@ h2{
    }
    .tab .content{
      padding: 1vw 1vw 1vw 1vw;
-     font-size: 2vw;
+     font-size: 2.6vw;
 
    }
    .tab .content span.first{
-     font-size: 3vw;
-     margin-bottom: .6vw;
+     /*font-size: 3vw;*/
+     margin-bottom: 1vw;
      display: inline-block;
    }
    .font{

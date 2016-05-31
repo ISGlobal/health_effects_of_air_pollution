@@ -32,7 +32,7 @@ d3.select('.reproductivo h2').text(iJS._('Aparato reproductivo'));
 d3.select('.cabeza .content').html(iJS._('<p><span class="first"><b>Ictus:</b> 1,4 millones de muertes anuales.</span><br/> \
 Según la OMS, un 34% de las muertes prematuras anuales atribuibles a contaminación del aire interior causada por combustibles sólidos se producen por accidentes cerebrovasculares.<br/> \
 <span class="font">Fuente: <a href="http://www.who.int/mediacentre/factsheets/fs292/es/">http://www.who.int/mediacentre/factsheets/fs292/es/</a></span></p> \
-<p><span class="first"><b>Daños en el desarrollo neuronal:</b> demostrados en animales y en fase de estudio en humanos.</span><br/>\
+<p><span class="first"><b>Daños en el desarrollo neuronal:</b> Demostrados en animales y en fase de estudio en humanos.</span><br/>\
 <span class="font">Fuentes: Environ Res. 2016 May;147:383­98 y Endocrinology. 2015 Oct;156(10):3473­82.</span></p>\
 <p><span class="first"><b>Problemas de salud mental:</b> Autismo y problemas de conducta en niños.</span><br/>\
 <span class="font">Fuentes: JAMA Psychiatry. 2013 Jan;70(1):71­7 y <a href="http://mentalhealthdaily.com/2015/08/11/air­pollution­causes­brain­damage">http://mentalhealthdaily.com/2015/08/11/air­pollution­causes­brain­damage</a></span></p>\
@@ -42,43 +42,43 @@ Según la OMS, un 34% de las muertes prematuras anuales atribuibles a contaminac
 d3.select('.respiratorio .content').html(iJS._('<p><span class="first"><b>Enfermedad Pulmonar Obstructiva Crónica (EPOC):</b> Cerca de 950.000 muertes anuales.</span></br> \
 Según la OMS, un 22% de las muertes prematuras anuales atribuibles a contaminación del aire interior causada por combustibles sólidos se producen por EPOC. </br>\
 <span class="font">Fuente: <a href="http://www.who.int/mediacentre/factsheets/fs292/es/">http://www.who.int/mediacentre/factsheets/fs292/es/</a></span></p>\
-<p><span class="first"><b>Cáncer de pulmón:</b> más de 255.000 muertes anuales.</span></br>\
+<p><span class="first"><b>Cáncer de pulmón:</b> Más de 255.000 muertes anuales.</span></br>\
 Según la OMS, un 6% de las muertes prematuras anuales atribuibles a contaminación del aire interior causada por combustibles sólidos se producen por cáncer de pulmón.</br>\
 <span class="font">Fuente: <a href="http://www.who.int/mediacentre/factsheets/fs292/es/">http://www.who.int/mediacentre/factsheets/fs292/es/</a></span></p>\
-<p><span class="first"><b>Neumonía:</b> más de 510.000 muertes anuales.</span></br>\
+<p><span class="first"><b>Neumonía:</b> Más de 510.000 muertes anuales.</span></br>\
 Según la OMS, un 12% de las muertes prematuras anuales atribuibles a contaminación del aire interior causada por combustibles sólidos se producen por neumonías. </br>\
 <span class="font">Fuente: <a href="http://www.who.int/mediacentre/factsheets/fs292/es/">http://www.who.int/mediacentre/factsheets/fs292/es/</a></span></p>\
-<p><span class="first"><b>Afectación de la función pulmonar:</b> función pulmonar reducida y menor crecimiento de los pulmones.</span></br>\
+<p><span class="first"><b>Afectación de la función pulmonar:</b> Función pulmonar reducida y menor crecimiento de los pulmones.</span></br>\
 <span class="font">Fuente: Thorax 2009 64: 645-646 y N Engl J Med. 2015 Mar 5;372(10):905-13).</span></p>\
 <p><span class="first"><b>Asma:</b> Nuevos casos de asma y agravamiento de los ya existentes.</span></br>\
 <span class="font">Fuente: Respirology. 2012 Aug;17(6):887-98.</span></p>'));
 
-d3.select('.corazon .content').html(iJS._('<p><b>Infarto de miocardio:</b> más de 1,1 millón de muertes anuales.</br>\
+d3.select('.corazon .content').html(iJS._('<p><span class="first"><b>Infarto de miocardio:</b> Más de 1,1 millón de muertes anuales.</span></br>\
 Según la OMS, un 26% de las muertes prematuras anuales atribuibles a contaminación del aire interior causada por combustibles sólidos se producen por infartos de miocardio. </br>\
 <span class="font">Fuente: <a href="http://www.who.int/mediacentre/factsheets/fs292/es/">http://www.who.int/mediacentre/factsheets/fs292/es/</a></span></p>\
-<p><b>Arritmia:</b> factor desencadenante de arritmias.</br>\
+<p><span class="first"><b>Arritmia:</b> Factor desencadenante de arritmias.</span></br>\
 <span class="font">Fuente: Circulation 2010;121;2331-2378.</span></p>\
-<p><b>Fallo congestivo cardíaco:</b> Evidencias consistentes relacionan contaminación atmosférica y mortalidad y morbilidad cardiovascular.</br> \
+<p><span class="first"><b>Fallo congestivo cardíaco:</b> Evidencias consistentes relacionan contaminación atmosférica y mortalidad y morbilidad cardiovascular.</span></br> \
 <span class="font">Fuente: Circulation 2010;121;2331-2378.</span></p>'));
 
-d3.select('.arterias .content').html(iJS._('<p><b>Hipertensión:</b> mayor riesgo de hipertensión.</br>\
+d3.select('.arterias .content').html(iJS._('<p><span class="first"><b>Hipertensión:</b> Mayor riesgo de hipertensión.</span></br>\
 <span class="font">Fuente: Circulation 2010;121;2331-2378.</span></p>\
-<p><b>Inflamación sistémica:</b> mayor riesgo de inflamación crónica.</br>\
+<p><span class="first"><b>Inflamación sistémica:</b> Mayor riesgo de inflamación crónica.</span></br>\
 <span class="font">Fuente: Circulation 2010;121;2331-2378.</span></p>\
-<p><b>Trombosis venosa profunda:</b> indicios de un aumento del riesgo del 70%.</br>\
+<p><span class="first"><b>Trombosis venosa profunda:</b> Indicios de un aumento del riesgo del 70%.</span></br>\
 Un estudio en la región de Lombardía (Italia) halló que un aumento de la exposición a largo plazo a partículas PM10 incrementaba el riesgo de trombosis venosa profunda en un 70%.</br>\
 <span class="font">Fuente: Circulation 2010;121;2331-2378.</span></p>\
-<p><b>Diabetes:</b> incremento en el riesgo de diabetes tipos 1 y 2 y de resistencia a la insulina.</br>\
+<p><span class="first"><b>Diabetes:</b> Incremento en el riesgo de diabetes tipos 1 y 2 y de resistencia a la insulina.</span></br>\
 <span class="font">Fuente: <a href="http://www.diabetesandenvironment.org/home/contam/air">http://www.diabetesandenvironment.org/home/contam/air</a></span></p>'));
 
-d3.select('.feto .content').html(iJS._('<p><b>Nacimiento prematuro:</b> incremento del riesgo, según múltiples estudios de CREAL-ISGlobal.</br>\
+d3.select('.feto .content').html(iJS._('<p><span class="first"><b>Nacimiento prematuro:</b> Incremento del riesgo, según múltiples estudios de CREAL-ISGlobal.</span></br>\
 <span class="font">Fuente: Environ Health Perspect; DOI:10.1289/ehp.123-A242.</span></p>\
-<p><b>Peso reducido al nacer:</b> incremento del riesgo, según múltiples estudios de CREAL-ISGlobal.</br>\
+<p><span class="first"><b>Peso reducido al nacer:</b> Incremento del riesgo, según múltiples estudios de CREAL-ISGlobal.</span></br>\
 <span class="font">Fuente: Environ Health Perspect; DOI:10.1289/ehp.123-A242.</span></p>\
-<p><b>Preclampsia:</b> incremento del riesgo, según múltiples estudios de CREAL-ISGlobal.</br>\
+<p><span class="first"><b>Preclampsia:</b> Incremento del riesgo, según múltiples estudios de CREAL-ISGlobal.</span></br>\
 <span class="font">Fuente: Hypertension. 2014 Sep;64(3):494-500.</span></p>'));
 
-d3.select('.reproductivo .content').html(iJS._('<p><b>Reducción en la calidad del esperma:</b> hipótesis todavía no probada.</p>'));
+d3.select('.reproductivo .content').html(iJS._('<p><span class="first"><b>Reducción en la calidad del esperma:</b> Hipótesis todavía no probada.</span></p>'));
 
 var w = window,
     d = document,
