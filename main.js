@@ -8,6 +8,18 @@ if(lang!=null && lang!=""){
   //Always do this after a `setlocale` or a `bindtextdomain` call.
   iJS.i18n.try_load_lang() ; //will load and parse messages data from the setting catalog.
 }
+
+
+if (!Modernizr.cssvwunit) {
+  d3.select('body').classed('nonvw',true);
+}
+if (!Modernizr.cssvhunit) {
+  d3.select('body').classed('nonvw',true);
+}
+
+
+
+
 d3.select('h1').text(iJS._('Efectos de la contaminación atmosférica sobre la salud'));
 d3.select('.cabeza h2').text(iJS._('Cabeza'));
 d3.select('.respiratorio h2').text(iJS._('Aparato Respiratorio'));
