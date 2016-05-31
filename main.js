@@ -104,6 +104,7 @@ d3.xml("woman.svg", "image/svg+xml", function(error, xml) {
   // d3.select('.country.liberia').text(iJS._("Liberia"));
 
   d3.selectAll('.tab h2').on("click", function(){
+
     console.log('click')
     var tab= d3.select(this.parentNode)
     // var svg=d3.select('svg');
@@ -123,6 +124,7 @@ d3.xml("woman.svg", "image/svg+xml", function(error, xml) {
 
     if(!tab.classed("active")){
       var maxH = d3.select(".tabs").node().getBoundingClientRect().height - tab.select('h2').node().getBoundingClientRect().height;
+      console.log('maxH',maxH)
       tab.select('.content').style({
         'height':maxH+"px"
       })
@@ -131,11 +133,13 @@ d3.xml("woman.svg", "image/svg+xml", function(error, xml) {
       d3.selectAll("g."+c).classed("active", true);
       // console.log()
     }else{
+
       tab.classed("active", false)
       d3.selectAll(".tab:not(.active)").classed("hide", false);
       d3.selectAll("g."+c).classed("active", false);
       d3.select('#men').style("visibility", "hidden");
       d3.select('#woman').style("visibility", "visible");
+      resize();
     }
 
 
@@ -148,8 +152,15 @@ d3.xml("woman.svg", "image/svg+xml", function(error, xml) {
     console.log('resize')
     var svg=d3.select('svg');
     // var aspectRatio =  svg.attr('width') / svg.attr('height');
-    svg.attr("height", (d3.select(".tabs").node().getBoundingClientRect().height - 10)+"px");
-    svg.attr("width",(d3.select(".tabs").node().getBoundingClientRect().height*aspectRatio) +"px")
+    console.log("d3.selectAll('.tab.active').length",d3.selectAll('.tab.active').length)
+    if(d3.selectAll('.tab.active')[0].length == 0){
+      svg.attr("height", (d3.select(".tabs").node().getBoundingClientRect().height - 10)+"px");
+      svg.attr("width",(d3.select(".tabs").node().getBoundingClientRect().height*aspectRatio) +"px")
+    }else{
+      var h = (d3.select(".tabs").node().getBoundingClientRect().height + d3.select(".tab.active .content").node().getBoundingClientRect().height - 10)
+      svg.attr("height", h+"px");
+      svg.attr("width",(h*aspectRatio) +"px")
+    }
     console.log(d3.select(".tabs").node().getBoundingClientRect().height,aspectRatio)
     svg.style({
       // "right": "-" + ((svg.node().getBoundingClientRect().width/2) - (d3.select('g#layer1').node().getBoundingClientRect().width/2))  + "px",
