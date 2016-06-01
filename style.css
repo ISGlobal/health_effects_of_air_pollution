@@ -81,10 +81,14 @@ h2{
   padding: 1vh 1vh 1vh 1vh;
   font-size: 2.6vh;
   position:absolute;
-  overflow-y:auto;
+  /*overflow-y:auto;*/
   /*width: 100%;*/
   left: 0;
   right: 0;
+}
+.tab .content div{
+  overflow: hidden;
+  /*height:200px;*/
 }
 .tab.reproductivo .content{
   /*width:100%;*/
@@ -115,6 +119,25 @@ h2{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.jspVerticalBar{
+  width:8px;
+  background: none;
+}
+.jspTrack{
+  background:#999;
+  /*opacity:.6;*/
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.jspDrag{
+  background:#666;
+  /*opacity:.6;*/
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 
