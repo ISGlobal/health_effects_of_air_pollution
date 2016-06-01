@@ -15,9 +15,9 @@ function loadjscssfile(filename, filetype){
 }
 
 loadjscssfile("https://fonts.googleapis.com/css?family=Roboto:400,700","css");
-loadjscssfile("./libs/jscrollpane/jquery.jscrollpane.css","css");
-loadjscssfile("style.css","css");
-loadjscssfile("style_nonvw.css","css");
+loadjscssfile("//isglobal.github.io/health_effects_of_air_pollution/libs/jscrollpane/jquery.jscrollpane.css","css");
+loadjscssfile("//isglobal.github.io/health_effects_of_air_pollution/style.css","css");
+loadjscssfile("//isglobal.github.io/health_effects_of_air_pollution/style_nonvw.css","css");
 
 
 
@@ -31,4 +31,4 @@ loadjscssfile("style_nonvw.css","css");
 
 // loadjscssfile("./main.js","js");
 
-loadjscssfile("./main_all.min.js","js");
+loadjscssfile("//isglobal.github.io/health_effects_of_air_pollution/main_all.min.js","js");
