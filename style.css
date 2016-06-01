@@ -181,7 +181,7 @@ stroke: #000 !important;
    #health_effects_of_air_pollution .font,
    #health_effects_of_air_pollution .font a{
      font-size: 1.8vw;
-
+     margin-bottom: .4vw;
    }
 }
 
@@ -214,6 +214,6 @@ stroke: #000 !important;
   #health_effects_of_air_pollution .font,
   #health_effects_of_air_pollution .font a{
     font-size: 2.5vw;
-
+    margin-bottom: .5vw;
   }
 }
