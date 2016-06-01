@@ -1,24 +1,24 @@
 
 
-body.nonvw h1{
+#health_effects_of_air_pollution.nonvw h1{
   font-size: 1.5em;
   padding: .5em;
 }
-body.nonvw h2{
+#health_effects_of_air_pollution.nonvw h2{
   font-size: 1em;
   padding: .8em 2em;
   background-size: 1.2em;
   background-position: .3em .8em;
 }
-body.nonvw .tab .content{
+#health_effects_of_air_pollution.nonvw .tab .content{
   padding: .6em .6em .6em .6em;
   font-size: .8em;
 }
 
-body.nonvw .font{
+#health_effects_of_air_pollution.nonvw .font{
   font-size: .7em;
 }
 
-body.nonvw .content a{
+#health_effects_of_air_pollution.nonvw .content a{
   width: 18em;
 }

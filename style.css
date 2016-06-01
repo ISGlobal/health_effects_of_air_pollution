@@ -1,15 +1,16 @@
 /* svg responsive*/
-html{
+/*html{
   margin:0;
-  font-family:Roboto;
-}
-body{
+
+}*/
+#health_effects_of_air_pollution{
   margin:0;
   /*height: 0;*/
   /*padding-top: 48%;*/
   position: relative;
+  font-family:Roboto;
 }
-svg {
+#health_effects_of_air_pollution svg {
   overflow: hidden;
   position: absolute;
   top: 66px;
@@ -21,21 +22,21 @@ svg {
   /*height:auto;*/
 }
 
-svg g.active path{
+#health_effects_of_air_pollution svg g.active path{
   fill:#7fc6d4 !important;
 }
-svg g.active.corazon path,
-svg g.active.feto path{
+#health_effects_of_air_pollution svg g.active.corazon path,
+#health_effects_of_air_pollution svg g.active.feto path{
 stroke-width: 1px !important;;
 stroke: #000 !important;
 }
 
-h1{
+#health_effects_of_air_pollution h1{
   font-size: 3.9vh;
   padding: 1.5vh;
   margin: 0;
 }
-h2{
+#health_effects_of_air_pollution h2{
   margin: 0;
   font-size: 2.1vh;
   text-transform: uppercase;
@@ -47,35 +48,35 @@ h2{
   background-position: 1.5vh 2.3vh;
 }
 
-#graph{
+#health_effects_of_air_pollution #graph{
   width: 100%;
   max-width: 100%;
 }
-.tab{
+#health_effects_of_air_pollution .tab{
   cursor:pointer;
   /*cursor:crosshair*/
 }
-.tab.cabeza{
+#health_effects_of_air_pollution .tab.cabeza{
   background-color:#008daa;
 }
-.tab.respiratorio{
+#health_effects_of_air_pollution .tab.respiratorio{
    background-color:#1998b2;
 }
-.tab.corazon{
+#health_effects_of_air_pollution .tab.corazon{
    background-color:#33a4bb;
 
 }
-.tab.arterias{
+#health_effects_of_air_pollution .tab.arterias{
    background-color:#4dafc4;
 }
-.tab.feto{
+#health_effects_of_air_pollution .tab.feto{
   background-color:#66bbcc;
 }
-.tab.reproductivo{
+#health_effects_of_air_pollution .tab.reproductivo{
    background-color:#7fc6d4;
 }
 
-.tab .content{
+#health_effects_of_air_pollution .tab .content{
   display:none;
   background-color:#cbcaca;
   padding: 1vh 1vh 1vh 1vh;
@@ -86,33 +87,33 @@ h2{
   left: 0;
   right: 0;
 }
-.tab .content div{
+#health_effects_of_air_pollution .tab .content div{
   overflow: hidden;
   /*height:200px;*/
 }
-.tab.reproductivo .content{
+#health_effects_of_air_pollution .tab.reproductivo .content{
   /*width:100%;*/
 }
-.tab.active h2{
+#health_effects_of_air_pollution .tab.active h2{
   background-image:url('go_back.svg');
 }
-.tab.active .content{
+#health_effects_of_air_pollution .tab.active .content{
   display:block
 }
-.tab.hide{
+#health_effects_of_air_pollution .tab.hide{
   display:none;
 }
-.tab .content span.first{
+#health_effects_of_air_pollution .tab .content span.first{
   /*font-size: 3vh;*/
   margin-bottom: 1vh;
   display: inline-block;
 }
-.font{
+#health_effects_of_air_pollution .font{
   font-size: 1.8vh;
   font-style: italic;
 }
 
-.content a{
+#health_effects_of_air_pollution .content a{
   /*white-space: normal;*/
   display:inline-block;
   width: 50vh;
@@ -121,18 +122,18 @@ h2{
   text-overflow: ellipsis;
 }
 
-.jspVerticalBar{
+#health_effects_of_air_pollution .jspVerticalBar{
   width:8px;
   background: none;
 }
-.jspTrack{
+#health_effects_of_air_pollution .jspTrack{
   background:#999;
   /*opacity:.6;*/
   webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-.jspDrag{
+#health_effects_of_air_pollution .jspDrag{
   background:#666;
   /*opacity:.6;*/
   webkit-border-radius: 5px;
@@ -144,28 +145,28 @@ h2{
 /* Landscape */
 @media screen and (orientation:landscape) {
    /* Landscape styles here */
-   h1{
+   #health_effects_of_air_pollution h1{
      font-size: 3.9vw;
      padding: 1.5vw;
    }
-   h2{
+   #health_effects_of_air_pollution h2{
      font-size: 2.1vw;
      padding: 3vw 7vw;
      background-size: 4vw;
 
      background-position: 1.5vw 2.3vw;
    }
-   .tab .content{
+   #health_effects_of_air_pollution .tab .content{
      padding: 1vw 1vw 1vw 1vw;
      font-size: 2.6vw;
 
    }
-   .tab .content span.first{
+   #health_effects_of_air_pollution .tab .content span.first{
      /*font-size: 3vw;*/
      margin-bottom: 1vw;
      display: inline-block;
    }
-   .font{
+   #health_effects_of_air_pollution .font{
      font-size: 1.8vw;
 
    }
