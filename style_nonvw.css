@@ -14,8 +14,12 @@
   padding: .6em .6em .6em .6em;
   font-size: .8em;
 }
+#health_effects_of_air_pollution.nonvw .tab .content p{
+  font-size: .8em;
+}
 
-#health_effects_of_air_pollution.nonvw .font{
+#health_effects_of_air_pollution.nonvw .font,
+#health_effects_of_air_pollution.nonvw .font a{
   font-size: .7em;
 }
 
