@@ -229,6 +229,8 @@ d3.xml("//isglobal.github.io/health_effects_of_air_pollution/woman.svg", "image/
       // "width": d3.select(".tabs").node().getBoundingClientRect().width + "px"
           // "padding-right":"0px"
     })
+
+    d3.select('#health_effects_of_air_pollution').style({"height":d3.select('#health_effects_of_air_pollution').node().getBoundingClientRect().height})
   }
 
 });
