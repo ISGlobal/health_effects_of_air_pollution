@@ -1,3 +1,5 @@
+jQuery( document ).ready(function( $ ) {
+
 d3.select('#health_effects_of_air_pollution').html('<div id="graph">\
   <h1>Efectos de la contaminación atmosférica sobre la salud</h1>\
   <div class="tabs">\
@@ -228,5 +230,12 @@ d3.xml("woman.svg", "image/svg+xml", function(error, xml) {
           // "padding-right":"0px"
     })
   }
+
+});
+
+
+
+
+
 
 });

@@ -21,10 +21,14 @@ loadjscssfile("style_nonvw.css","css");
 
 
 
-loadjscssfile("./libs/d3.v3.min.js","js");
-loadjscssfile("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js","js");
-loadjscssfile("./libs/ijs/i.min.js","js");
-loadjscssfile("./libs/utils.js","js");
-loadjscssfile("./libs/modernizr-custom.js","js");
-loadjscssfile("./libs/jscrollpane/jquery.jscrollpane.min.js","js");
-loadjscssfile("./main.js","js");
+// loadjscssfile("./libs/d3.v3.min.js","js");
+// loadjscssfile("/libs/ijs/jquery.min.js","js");
+// loadjscssfile("./libs/ijs/i.min.js","js");
+// loadjscssfile("./libs/utils.js","js");
+// loadjscssfile("./libs/modernizr-custom.js","js");
+// loadjscssfile("./libs/jscrollpane/jquery.jscrollpane.min.js","js");
+// loadjscssfile("./libs/jscrollpane/jquery.mousewheel.js","js");
+
+// loadjscssfile("./main.js","js");
+
+loadjscssfile("./main_all.min.js","js");
