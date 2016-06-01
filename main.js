@@ -124,7 +124,7 @@ d3.select('#health_effects_of_air_pollution .reproductivo .content div').html(iJ
 
 var scrollpane;
 
-d3.xml("woman.svg", "image/svg+xml", function(error, xml) {
+d3.xml("//isglobal.github.io/health_effects_of_air_pollution/woman.svg", "image/svg+xml", function(error, xml) {
   if (error) throw error;
   document.getElementById("health_effects_of_air_pollution").appendChild(xml.documentElement);
   d3.select('#men').style("visibility", "hidden");
