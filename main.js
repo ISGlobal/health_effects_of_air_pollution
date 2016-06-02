@@ -122,6 +122,8 @@ d3.select('#health_effects_of_air_pollution .reproductivo .content div').html(iJ
 //     x = w.innerWidth || e.clientWidth || g.clientWidth,
 //     y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
+d3.selectAll('a').attr("target","_blank")
+
 var scrollpane;
 
 d3.xml("//isglobal.github.io/health_effects_of_air_pollution/woman.svg", "image/svg+xml", function(error, xml) {
