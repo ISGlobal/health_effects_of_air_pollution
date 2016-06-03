@@ -168,7 +168,13 @@ d3.xml("//isglobal.github.io/health_effects_of_air_pollution/woman.svg", "image/
       // var tab= d3.select(this.parentNode)
       if(!d3.select(this).classed('active')){
         if(!d3.select('#health_effects_of_air_pollution svg g.active').empty()){
-          return
+          var c = d3.select('#health_effects_of_air_pollution svg g.active').attr('class');
+          c=c.replace("active", "").trim();
+          var tab = d3.select('#health_effects_of_air_pollution .tab.'+c);
+          toggleActive(tab)
+          console.log('NOOOOO' )
+
+          // return
         }
       }
       var c= d3.select(this).attr('class');
@@ -181,11 +187,21 @@ d3.xml("//isglobal.github.io/health_effects_of_air_pollution/woman.svg", "image/
       var tab= d3.select(this.parentNode);
     }
     console.log('tab',tab)
+    toggleActive(tab)
     // var svg=d3.select('svg');
 
     // tab.selectAll("tab")
     //   .filter(function(d){ console.log(d, this);return d;} )
     //   .style({"display":"none"});
+
+
+
+
+    // tab.style("max-height",maxH);
+
+  })
+
+  function toggleActive(tab){
     if(!tab.classed('reproductivo')){
       d3.select('#health_effects_of_air_pollution #men').style("visibility", "hidden");
       d3.select('#health_effects_of_air_pollution #woman').style("visibility", "visible");
@@ -221,12 +237,7 @@ d3.xml("//isglobal.github.io/health_effects_of_air_pollution/woman.svg", "image/
       d3.select('#health_effects_of_air_pollution #woman').style("visibility", "visible");
       resize();
     }
-
-
-
-    // tab.style("max-height",maxH);
-
-  })
+  }
 
   function resize(){
     console.log('resize')
