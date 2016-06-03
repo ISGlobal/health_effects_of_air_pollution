@@ -157,10 +157,20 @@ d3.xml("//isglobal.github.io/health_effects_of_air_pollution/woman.svg", "image/
 
   d3.selectAll('#health_effects_of_air_pollution .tab h2, #health_effects_of_air_pollution g.cabeza, #health_effects_of_air_pollution g.respiratorio, #health_effects_of_air_pollution g.corazon, #health_effects_of_air_pollution g.arterias, #health_effects_of_air_pollution g.feto, #health_effects_of_air_pollution g.reproductivo')
     .on("click", function(){
-    console.log(this.tagName)
-    console.log('click')
+    // console.log(this.tagName)
+    // console.log('click')
+    // console.log(d3.select('g.active') == d3.select(this))
+    // console.log(d3.select('g.active'),d3.select(this))
+    // if( d3.select('g.active'). == d3.select(this)){
+    //   return;
+    // }
     if (this.tagName == 'g'){
       // var tab= d3.select(this.parentNode)
+      if(!d3.select(this).classed('active')){
+        if(!d3.select('#health_effects_of_air_pollution svg g.active').empty()){
+          return
+        }
+      }
       var c= d3.select(this).attr('class');
       c=c.replace("active", "").trim();
       console.log('class',c,'#health_effects_of_air_pollution .tab.'+c);
