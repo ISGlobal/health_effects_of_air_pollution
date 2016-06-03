@@ -217,3 +217,14 @@ stroke: #000 !important;
     margin-bottom: .5vw;
   }
 }
+
+
+
+#health_effects_of_air_pollution g.cabeza,
+#health_effects_of_air_pollution g.respiratorio,
+#health_effects_of_air_pollution g.corazon,
+#health_effects_of_air_pollution g.arterias,
+#health_effects_of_air_pollution g.feto,
+#health_effects_of_air_pollution g.reproductivo{
+  cursor:pointer;
+}

@@ -70,7 +70,7 @@ Según la OMS, un 34% de las muertes prematuras anuales atribuibles a contaminac
 <p><span class="first"><b>Daños en el desarrollo neuronal:</b> Demostrados en animales y en fase de estudio en humanos.</span><br/>\
 <span class="font">Fuentes: Environ Res. 2016 May;147:383­98 y Endocrinology. 2015 Oct;156(10):3473­82.</span></p>\
 <p><span class="first"><b>Problemas de salud mental:</b> Autismo y problemas de conducta en niños.</span><br/>\
-<span class="font">Fuentes: JAMA Psychiatry. 2013 Jan;70(1):71­7 y <a href="http://mentalhealthdaily.com/2015/08/11/air­pollution­causes­brain­damage">http://mentalhealthdaily.com/2015/08/11/air­pollution­causes­brain­damage</a></span></p>\
+<span class="font">Fuentes: JAMA Psychiatry. 2013 Jan;70(1):71­7 y <a href="http://mentalhealthdaily.com/2015/08/11/air-pollution-causes-brain-damage/">http://mentalhealthdaily.com/2015/08/11/air-pollution-causes-brain-damage/</a></span></p>\
 <p><span class="first"><b>Enfermedades neurodegenerativas:</b> Daños similares a los de un cerebro con Alzheimer.</span><br/>\
 <span class="font">Fuente: J Alzheimers Dis. 2015;45(3):757­70.</span></p>'));
 
@@ -155,10 +155,22 @@ d3.xml("//isglobal.github.io/health_effects_of_air_pollution/woman.svg", "image/
   // d3.select('.country.sierra_leona').text(iJS._("Sierra Leona"));
   // d3.select('.country.liberia').text(iJS._("Liberia"));
 
-  d3.selectAll('#health_effects_of_air_pollution .tab h2').on("click", function(){
-
+  d3.selectAll('#health_effects_of_air_pollution .tab h2, #health_effects_of_air_pollution g.cabeza, #health_effects_of_air_pollution g.respiratorio, #health_effects_of_air_pollution g.corazon, #health_effects_of_air_pollution g.arterias, #health_effects_of_air_pollution g.feto, #health_effects_of_air_pollution g.reproductivo')
+    .on("click", function(){
+    console.log(this.tagName)
     console.log('click')
-    var tab= d3.select(this.parentNode)
+    if (this.tagName == 'g'){
+      // var tab= d3.select(this.parentNode)
+      var c= d3.select(this).attr('class');
+      c=c.replace("active", "").trim();
+      console.log('class',c,'#health_effects_of_air_pollution .tab.'+c);
+      var tab = d3.select('#health_effects_of_air_pollution .tab.'+c);
+      console.log('tab1',tab)
+      // tab = tab[0].parentNode;
+    }else{
+      var tab= d3.select(this.parentNode);
+    }
+    console.log('tab',tab)
     // var svg=d3.select('svg');
 
     // tab.selectAll("tab")
